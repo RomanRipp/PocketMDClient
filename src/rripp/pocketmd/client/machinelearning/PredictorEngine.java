@@ -8,14 +8,30 @@ import rripp.pocketmd.client.datahendler.Deserialization;
 import android.util.Log;
 
 public class PredictorEngine {
-
-    private static Map<String, Integer> predictions;
-    private static Map<String, Double> probabilities;
-    private static MachineLearningClassification[] models;
 	
+	/**
+	 * The models are derived from data my server side application and
+	 * later passed ass assets
+	 */
+	private static MachineLearningClassification[] models;
+	/**
+	 * predicted complications of the disease 
+	 */
+    private static Map<String, Integer> predictions;
+    /**
+     * probability value associated with a prediction
+     */
+    private static Map<String, Double> probabilities;
+    /**
+     * Constructor for prediction engine
+     * this class handles classification problem 
+     * by means of applying support vector machine 
+     * algorithm to data
+     */
 	public PredictorEngine(){
 		predictions = new HashMap<String, Integer>();
 		probabilities = new HashMap<String, Double>();
+		//We obtain models by deserializing them. 
 		String[] outputnames = Deserialization.getOutNames();
 		models = new MachineLearningClassification[outputnames.length];
 		int i = 0;
@@ -26,21 +42,24 @@ public class PredictorEngine {
 		}
 	}
 	/**
-	 * Here I run the prediction for all the outputs specified in the output names array
+	 * This is the core of the program, this method 
+	 * handles classification problem 
+	 * for inpurs in instance. 
 	 * @param instance
 	 */
 	public void doTheMachineLearningMagic(Map<Integer, Double> instance){
-		//Setting the instance values for classifacation
+		//Setting the instance values for classification
 		SupportVectorMachine.setInstance(instance);
 		int i = 0;
+		//Prediction phase for all outputs
 		for (String s : Deserialization.getOutNames()){			
 			System.out.println("Classifying "+s);
 			models[i].Predict();
 			predictions.put(s, (Integer) models[i].getClassification());
-			probabilities.put(s, models[i].getClassProbability());//System.out.println(models[i].getClassProbability());
+			probabilities.put(s, models[i].getClassProbability());
 			i++;
 		}
-    	//Log.d("predictor","All Calssified:  "+predictions);
+    	Log.d("predictorClass","All Calssified:  "+predictions);
 	}
 	/**
 	 * return predicted values:
