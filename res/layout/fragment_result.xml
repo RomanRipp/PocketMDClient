@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/layout_left_padding"
+    android:paddingRight="@dimen/layout_right_padding">
+    
+    <TextView
+        android:id="@+id/Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/calc_result_capt"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/text_size_capt" />
+    <ScrollView
+        android:id="@+id/VerticalScrollView1"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="fill_parent"
+   	    android:layout_below="@+id/Caption" >
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top" >
+
+	<!-- The bar chart: -->        
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/layout_up_padding" >
+
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="30dp"
+    	android:orientation="horizontal"
+    	android:padding="5dp">
+
+		<TextView
+		    android:id="@+id/p2"
+		    android:layout_width="@dimen/lbl_short_width"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="@string/osl1_lbl_short" />
+  
+    	<TextView
+        	android:id="@+id/bar"
+        	android:layout_width="5dp"
+        	android:layout_height="25dp"
+        	android:background="#FF000000" />
+  	<RelativeLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+	    android:paddingTop="1dp">
+    	<TextView
+        	android:id="@+id/p1"
+        	android:tag="scaleSize"
+        	android:layout_width="220dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FF00FFFF" />
+    	<TextView
+        	android:id="@+id/p3"
+        	android:tag="OSL1_bar"
+        	android:layout_width="140dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FFFF0000"
+        	android:gravity="end"  />
+
+  	</RelativeLayout>
+	</LinearLayout>
+        
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="30dp"
+    	android:orientation="horizontal"
+    	android:padding="5dp">
+
+		<TextView
+		    android:id="@+id/p2"
+		    android:gravity="center"
+		    android:layout_width="@dimen/lbl_short_width"
+		    android:layout_height="wrap_content"
+		    android:text="@string/osl3_lbl_short" />
+  
+    	<TextView
+        	android:id="@+id/bar"
+        	android:layout_width="5dp"
+        	android:layout_height="25dp"
+        	android:background="#FF000000" />
+  	<RelativeLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+	    android:paddingTop="1dp">
+    	<TextView
+        	android:id="@+id/p1"
+        	android:layout_width="220dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FF00FFFF" />
+    	<TextView
+        	android:id="@+id/p3"
+        	android:tag="OSL3_bar"
+        	android:layout_width="140dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FFFF0000"
+        	android:gravity="end"  />
+
+  	</RelativeLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="30dp"
+    	android:orientation="horizontal"
+    	android:padding="5dp">
+
+		<TextView
+		    android:id="@+id/p2"
+		    android:gravity="center"
+		    android:layout_width="@dimen/lbl_short_width"
+		    android:layout_height="wrap_content"
+		    android:text="@string/osl5_lbl_short" />
+  
+    	<TextView
+        	android:id="@+id/bar"
+        	android:layout_width="5dp"
+        	android:layout_height="25dp"
+        	android:background="#FF000000" />
+  	<RelativeLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+	    android:paddingTop="1dp">
+    	<TextView
+        	android:id="@+id/p1"
+        	android:layout_width="220dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FF00FFFF" />
+    	<TextView
+        	android:id="@+id/p3"
+        	android:tag="OSL5_bar"
+        	android:layout_width="140dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FFFF0000"
+        	android:gravity="end"  />
+
+  	</RelativeLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="30dp"
+    	android:orientation="horizontal"
+    	android:padding="5dp">
+
+		<TextView
+		    android:id="@+id/p2"
+		    android:gravity="center"
+		    android:layout_width="@dimen/lbl_short_width"
+		    android:layout_height="wrap_content"
+		    android:text="@string/osl7_lbl_short" />
+  
+    	<TextView
+        	android:id="@+id/bar"
+        	android:layout_width="5dp"
+        	android:layout_height="25dp"
+        	android:background="#FF000000" />
+  	<RelativeLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+	    android:paddingTop="1dp">
+    	<TextView
+        	android:id="@+id/p1"
+        	android:layout_width="220dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FF00FFFF" />
+    	<TextView
+        	android:id="@+id/p3"
+        	android:tag="OSL7_bar"
+        	android:layout_width="140dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FFFF0000"
+        	android:gravity="end"  />
+
+  	</RelativeLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="30dp"
+    	android:orientation="horizontal"
+    	android:padding="5dp">
+
+		<TextView
+		    android:id="@+id/p2"
+		    android:gravity="center"
+		    android:layout_width="@dimen/lbl_short_width"
+		    android:layout_height="wrap_content"
+		    android:text="@string/osl9_lbl_short" />
+  
+    	<TextView
+        	android:id="@+id/bar"
+        	android:layout_width="5dp"
+        	android:layout_height="25dp"
+        	android:background="#FF000000" />
+  	<RelativeLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+	    android:paddingTop="1dp">
+    	<TextView
+        	android:id="@+id/p1"
+        	android:layout_width="220dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FF00FFFF" />
+    	<TextView
+        	android:id="@+id/p3"
+        	android:tag="OSL9_bar"
+        	android:layout_width="140dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FFFF0000"
+        	android:gravity="end"  />
+
+  	</RelativeLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="30dp"
+    	android:orientation="horizontal"
+    	android:padding="5dp">
+
+		<TextView
+		    android:id="@+id/p2"
+		    android:gravity="center"
+		    android:layout_width="@dimen/lbl_short_width"
+		    android:layout_height="wrap_content"
+		    android:text="@string/osl10_lbl_short" />
+  
+    	<TextView
+        	android:id="@+id/bar"
+        	android:layout_width="5dp"
+        	android:layout_height="25dp"
+        	android:background="#FF000000" />
+  	<RelativeLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+	    android:paddingTop="1dp">
+    	<TextView
+        	android:id="@+id/p1"
+        	android:layout_width="220dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FF00FFFF" />
+    	<TextView
+        	android:id="@+id/p3"
+        	android:tag="OSL10_bar"
+        	android:layout_width="140dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FFFF0000"
+        	android:gravity="end"  />
+
+  	</RelativeLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="30dp"
+    	android:orientation="horizontal"
+    	android:padding="5dp">
+
+		<TextView
+		    android:id="@+id/p2"
+		    android:gravity="center"
+		    android:layout_width="@dimen/lbl_short_width"
+		    android:layout_height="wrap_content"
+		    android:text="@string/ish_lbl_short" />
+  
+    	<TextView
+        	android:id="@+id/bar"
+        	android:layout_width="5dp"
+        	android:layout_height="25dp"
+        	android:background="#FF000000" />
+  	<RelativeLayout
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+	    android:paddingTop="1dp">
+    	<TextView
+        	android:id="@+id/p1"
+        	android:layout_width="220dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FF00FFFF" />
+    	<TextView
+        	android:id="@+id/p3"
+        	android:tag="ISH_bar"
+        	android:layout_width="140dp"
+        	android:layout_height="wrap_content"
+        	android:background="#FFFF0000"
+        	android:gravity="end"  />
+
+  	</RelativeLayout>
+	</LinearLayout>
+	
+        <TableLayout
+            android:id="@+id/tabla_cuerpo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!--TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                < TextView
+                    android:id="@+id/hat_par"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:text="@string/table_hat_par_lbl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/hat_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:text="@string/table_hat_val_lbl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+            </TableRow> -->
+
+            <!--  TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/ice_par_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:text="@string/ice_syndr_lbl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/ice_val_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/ice_prob_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+            </TableRow>-->
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/cereb_par_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:text="@string/osl1_lbl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/hat_val_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:tag="OSL1_val"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/cardio_par_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:text="@string/osl3_lbl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/cardio_val_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:tag="OSL3_val"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/resp_par_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:text="@string/osl5_lbl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/resp_val_txt"
+                    android:tag="OSL5_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/renal_par_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:text="@string/osl7_lbl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/renal_val_txt"
+                    android:tag="OSL7_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/hepatic_par_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:text="@string/osl9_lbl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/hepatic_val_txt"
+                    android:tag="OSL9_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/pneumo_par_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:text="@string/osl10_lbl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/pneumo_val_txt"
+                    android:tag="OSL10_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/ish_par_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:text="@string/ish_lbl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/ish_val_txt"
+                    android:tag="ISH_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/text_size_lbl" >
+                </TextView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    </HorizontalScrollView>
+	</ScrollView>
+</RelativeLayout>

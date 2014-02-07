@@ -1,0 +1,94 @@
+<resources>
+	<!--APPLICATION STRINGS-->
+    <string name="app_name">PocketMD</string>
+    <string name="no_inputs_provided_dialog">You did not provide the inputs, but this is fine, you want to see the demo?</string>
+    <string name="no_instance_to_send_dialog">The parameters of a patient are missing enter the parameters and try again.</string>
+    <string name="use_calculator_dialog">Use Glasgow Coma Scale calculator?</string>
+    <string name="glasgo_calculator_dialog">Glasgow Coma Scale calculator</string>
+
+    <!-- NAVIGATION -->
+    <string name="contribute_fragment_name">Contribute</string>
+    <string name="input_fragment_name">Input</string>
+    <string name="result_fragment_name">Result</string>
+    <string name="next_button_lbl">next</string>
+
+    <!-- FRAGMENT STRINGS: PATIENT DATA --> 
+	<string name="pat_data_capt">Patient data:</string>
+    <string name="timepost_lbl">Duration of illness/injury (hr)</string>
+    <string name="pulse1_lbl">Heart rate (bpm)</string>
+    <string name="sad1_lbl">Systolic Blood Pressure (mmHg)</string>
+    <string name="dad1_lbl">Diastolic Blood Pressure (mmHg)</string>
+    <string name="indSh1_lbl">Shock Index</string>
+    <string name="shockTime_lbl">Duration of shock (hr)</string>
+    <string name="temp1_lbl">Temperature (ºC)</string>
+    <string name="mvp1_lbl">Control Mechanical Ventilation</string>
+    <string name="resp1_lbl">Respiratory Rate (bpm)</string>
+    <string name="gluc1_lbl">Blood Sugar Level (mmol/L)</string>
+    <string name="glasgo1_lbl">The Glasgow Coma Scale (score)</string>
+    <string name="age_lbl">Age (years)</string>
+    
+    <!-- FRAGMENT STRINGS: CALCULATED RESULT DATA -->
+    <string name="calc_result_capt">Predicted parameters: </string>
+    <string name="table_hat_par_lbl">Parameter</string>
+    <string name="contribute_capt">Treatment result</string>
+    <string name="table_hat_val_lbl">Value</string>
+    <string name="table_hat_prob_lbl">Probability</string>
+
+    <!-- FRAGMENT STRINGS: SELECT OUTPUTS -->
+    <string name="osl1_lbl">DIC-syndrome</string>
+    <string name="osl3_lbl">Sepsis</string>
+    <string name="osl5_lbl">Acute Cardio-Vascular Failure</string>
+    <string name="osl7_lbl">Acute Renal Failure</string>
+    <string name="osl9_lbl">Acute Inflammatory Airways Disease</string>
+    <string name="osl10_lbl">Acute Intestinal Injury</string>
+	<string name="ish_lbl">Death</string>
+	
+    <string name="osl1_lbl_short">DIC</string>
+    <string name="osl3_lbl_short">Sepsis</string>
+    <string name="osl5_lbl_short">ACVF</string>
+    <string name="osl7_lbl_short">ARF</string>
+    <string name="osl9_lbl_short">AIAD</string>
+    <string name="osl10_lbl_short">AII</string>
+	<string name="ish_lbl_short">Death</string>
+	
+	
+	<!-- FRAGMENT STRINGS: CLASSIFICATION LABELS -->
+	<string name="yes_lbl">Yes</string>
+	<string name="no_lbl">No</string>
+	
+	<!-- FRAGMENT STRINGS: buttons -->
+	<string name="ok_btn">OK</string>
+	<string name="demo_btn">Demo</string>
+	<string name="cancel_btn">Cancel</string>
+	<string name="contribute_button_lbl">Send</string>
+	
+	<!-- DIALOG STRINGS: GLASGOW CALCULATOR -->
+	<string name="gcs_eye_lbl">Eye opening</string>
+	<string name="gcs_motor_lbl">Motor response</string>
+	<string name="gcs_verbal_lbl">Verbal response</string>
+	<string-array name="glasgow_eye_reaction">
+	    <item name="gcs_eye_blank">Eye opening:</item>
+	    <item name="gcs_no_eye">No response</item>
+	    <item name="gcs_pain_eye">With pain</item>
+	    <item name="gcs_verbal_eye">With verbal command</item>
+	    <item name="gcs_spont_eye">Spontaneous</item>
+	</string-array>
+	<string-array name="glasgow_motor_reaction">
+	    <item name="gcs_mot_blank">Motor response:</item>
+	    <item name="gcs_no_mot">None</item>
+	    <item name="gcs_decer_mot">Decerebrate rigidity</item>
+	    <item name="gcs_decor_mot">Decorticate rigidity</item>
+	    <item name="gcs_flex_mot">Flexion withdrawal</item>
+	    <item name="gcs_pain_mot">Localizes pain</item>
+	    <item name="gcs_verb_mot">Obeys verbal command</item>
+	</string-array>
+	<string-array name="glasgow_verbal_reaction">
+	    <item name="gcs_verb_blank">Verbal response:</item>
+	    <item name="gcs_no_verb">None</item>
+	    <item name="gcs_incompreh_verb">Incomprehencible</item>
+	    <item name="gcs_inapropr_verb">Inapropriate words</item>
+	    <item name="gcs_diorient_verb">Disoriented conversation</item>
+	    <item name="gcs_orient_verb">Oriented converses</item>
+	    <item name="gcs_intub_verb">Intubated</item>
+	</string-array>
+</resources>

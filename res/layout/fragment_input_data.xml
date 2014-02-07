@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/layout_left_padding"
+    android:paddingRight="@dimen/layout_right_padding">
+    
+    <TextView
+        android:id="@+id/Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pat_data_capt"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/text_size_capt" />
+    
+   	<ScrollView
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="fill_parent"
+   	    android:layout_below="@+id/Caption" >
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" 
+		    android:paddingTop="@dimen/layout_up_padding">
+
+			<EditText
+			    android:id="@+id/TIMEPOST_Text"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="@string/timepost_lbl"
+			    android:inputType="numberDecimal"
+			    android:tag="TIMEPOST"
+			    android:textSize="@dimen/text_size_lbl" />
+
+			<EditText
+			    android:id="@+id/PULSE1_Text"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="@string/pulse1_lbl"
+			    android:inputType="number"
+			    android:tag="PULSE1"
+			    android:textSize="@dimen/text_size_lbl" />
+
+			<EditText
+			    android:id="@+id/DAD1_Text"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="@string/dad1_lbl"
+			    android:inputType="numberDecimal"
+			    android:tag="DAD1"
+			    android:textSize="@dimen/text_size_lbl" />
+
+			<EditText
+			    android:id="@+id/SAD1_Text"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="@string/sad1_lbl"
+			    android:inputType="numberDecimal"
+			    android:tag="SAD1"
+			    android:textSize="@dimen/text_size_lbl" />
+			
+			<EditText
+			    android:id="@+id/IndSh1_Text"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="@string/indSh1_lbl"
+			    android:inputType="numberDecimal"
+			    android:tag="IndSh1"
+			    android:textSize="@dimen/text_size_lbl" />
+
+			<EditText
+			    android:id="@+id/ShockTime_Text"
+			    android:tag ="ShockTime"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="@string/shockTime_lbl"
+			    android:inputType="number" 
+			    android:textSize="@dimen/text_size_lbl" />
+
+			<EditText
+			    android:id="@+id/TEMP1_Text"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="@string/temp1_lbl"
+			    android:inputType="numberDecimal"
+			    android:tag="TEMP1"
+			    android:textSize="@dimen/text_size_lbl" />
+			
+			<!-- <EditText
+			    android:id="@+id/MVP1_Text"
+			    android:tag ="MVP1"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="@string/mvp1_lbl"
+			    android:inputType="number" 
+			    android:textSize="@dimen/text_size_lbl" />
+				 -->		
+
+			<EditText
+			    android:id="@+id/RESP1_Text"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="@string/resp1_lbl"
+			    android:inputType="numberDecimal"
+			    android:tag="RESP1"
+			    android:textSize="@dimen/text_size_lbl" />
+
+			<EditText
+			    android:id="@+id/GLUC1_Text"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="@string/gluc1_lbl"
+			    android:inputType="numberDecimal"
+			    android:tag="GLUC1"
+			    android:textSize="@dimen/text_size_lbl" />
+			
+			<EditText
+			    android:id="@+id/GLASGO1_Text"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="@string/glasgo1_lbl"
+			    android:inputType="numberDecimal"
+			    android:tag="GLASGO1"
+			    android:textSize="@dimen/text_size_lbl"
+			    android:focusableInTouchMode="false" />
+			
+			<EditText
+			    android:id="@+id/AGE_Text"
+			    android:tag ="AGE"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="@string/age_lbl"
+			    android:inputType="number" 
+			    android:textSize="@dimen/text_size_lbl" />
+
+			<CheckBox
+			    android:id="@+id/checkBox1"
+			    android:tag ="MVP1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:hint="@string/mvp1_lbl" />
+									
+			<RelativeLayout
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="fill_parent"
+    		    android:gravity="center_horizontal"
+    		    android:paddingTop="@dimen/butt_up_padding"
+	    	    android:paddingBottom="@dimen/butt_down_padding" >
+
+    			<ImageButton
+    			    android:id="@+id/btn_Next"
+	    		    android:layout_width="wrap_content"
+    		    	android:layout_height="wrap_content"
+    			    android:layout_alignParentTop="true"
+    			    android:layout_centerHorizontal="true"
+    			    android:background="@drawable/next_button" />
+
+	    		<TextView
+    			    android:id="@+id/textView2"
+    			    android:layout_width="wrap_content"
+    			    android:layout_height="wrap_content"
+	    		    android:layout_centerHorizontal="true"
+    		    	android:layout_centerVertical="true"    		   		
+    			    android:text="@string/next_button_lbl" 
+    			    android:textSize="@dimen/text_size_lbl" />
+			</RelativeLayout>
+		</LinearLayout> 
+	</ScrollView>
+</RelativeLayout>

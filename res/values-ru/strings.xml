@@ -1,0 +1,63 @@
+<resources>
+	<!--APPLICATION STRINGS-->
+    <string name="app_name">PocketMD</string>
+    <string name="no_inputs_provided_dialog">Вы не ввели параметры пациента, но это ничего, хотите мы сделаем это за вас и покажем демо?</string>
+    <string name="no_instance_to_send_dialog">Показатели пациента отсутствуют введите их и попробуйте еще раз</string>
+
+    <!-- NAVIGATION -->
+    <string name="contribute_fragment_name">Сохранить</string>
+    <string name="input_fragment_name">Параметры</string>
+    <string name="result_fragment_name">Рассчет</string>
+    <string name="next_button_lbl">Дальше</string>
+
+    <!-- FRAGMENT STRINGS: PATIENT DATA -->    
+ 	<string name="pat_data_capt">Показатели больного:</string>
+    <string name="timepost_lbl">Длительность заболевания/травмы (ч)</string>
+    <string name="pulse1_lbl">Частота сердечных сокращений (уд/мин)</string>
+    <string name="sad1_lbl">Систолическое Артериальное Давление (мм.рт.ст.)</string>
+    <string name="dad1_lbl">Диастолическое Артериальное Давление (мм.рт.ст.)</string>
+    <string name="indSh1_lbl">Индекс шока</string>
+    <string name="shockTime_lbl">Длительность кретической гипотонии (ч)</string>
+    <string name="temp1_lbl">Температура тела (ºC)</string>
+    <string name="mvp1_lbl">Искуственная вентиляция легких</string>
+    <string name="resp1_lbl">Частота дыхания (ЧД/мин)</string>
+    <string name="gluc1_lbl">Глюкоза крови (ммоль/л)</string>
+    <string name="glasgo1_lbl">Шкала Глазго (балл)</string>
+    <string name="age_lbl">Вазраст (лет)</string>
+    
+    <!-- FRAGMENT STRINGS: CALCULATED RESULT DATA -->
+    <string name="calc_result_capt">Спрогнозированные осложнения: </string>
+    <string name="contribute_capt">Результат лечения больного</string>
+    <string name="table_hat_par_lbl">Осложнение</string>
+    <string name="table_hat_val_lbl">Значение</string>
+    <string name="table_hat_prob_lbl">Вероятность</string>
+    
+    <!-- FRAGMENT STRINGS: RESUTL LABELS -->
+    <string name="select_outs_label">Выберите осложнения для прогноза: </string>
+    <string name="osl1_lbl">ДВС синдром</string>
+    <string name="osl3_lbl">Сепсис</string>
+    <string name="osl5_lbl">Острая Сердечно-Сосудистая Недост.</string>
+    <string name="osl7_lbl">Почечная Недостаточность</string>
+    <string name="osl9_lbl">Остр. Восп. Дых. Путей</string>
+    <string name="osl10_lbl">Острая Кишечная Недостаточность</string>
+	<string name="ish_lbl">Смерть</string>
+	
+	<string name="osl1_lbl_short">ДВС</string>
+    <string name="osl3_lbl_short">Сепсис</string>
+    <string name="osl5_lbl_short">ОССН</string>
+    <string name="osl7_lbl_short">ПН</string>
+    <string name="osl9_lbl_short">ОВЗДП</string>
+    <string name="osl10_lbl_short">ОКН</string>
+	<string name="ish_lbl_short">Смерть</string>
+	
+	<!-- FRAGMENT STRINGS: CLASSIFICATION LABELS -->
+	<string name="yes_lbl">Да</string>
+	<string name="no_lbl">Нет</string>
+	
+	<!-- FRAGMENT STRINGS: DIALOG LABELS -->
+	
+	<string name="demo_btn">Демо</string>
+	<string name="ok_btn">OK</string>
+	<string name="cancel_btn">Отмена</string>
+	<string name="contribute_button_lbl">Отпр.</string>
+</resources>

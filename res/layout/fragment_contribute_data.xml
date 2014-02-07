@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/layout_left_padding"
+    android:paddingRight="@dimen/layout_right_padding">
+    
+    <TextView
+        android:id="@+id/Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/contribute_capt"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/text_size_capt" />
+
+    <ScrollView
+        android:id="@+id/VerticalScrollView1"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="fill_parent"
+   	    android:layout_below="@+id/Caption" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/osl1_check"
+                android:tag="OSL1_contribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="@string/osl1_lbl"/>
+
+            <CheckBox
+                android:id="@+id/osl3_check"
+                android:tag="OSL3_contribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/osl3_lbl" />
+
+            <CheckBox
+                android:id="@+id/osl5_check"
+                android:tag="OSL5_contribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/osl5_lbl" />
+
+            <CheckBox
+                android:id="@+id/osl7_check"
+                android:tag="OSL7_contribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/osl7_lbl"/>
+
+            <CheckBox
+                android:id="@+id/osl9_check"
+                android:tag="OSL9_contribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/osl9_lbl"/>
+
+            <CheckBox
+                android:id="@+id/osl10_check"
+                android:tag="OSL10_contribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/osl10_lbl"/>
+
+            <CheckBox
+                android:id="@+id/ish_check"
+                android:tag="ISH_contribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ish_lbl"/>
+            <RelativeLayout	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="fill_parent"
+    		    android:gravity="center_horizontal"
+    		    android:paddingTop="@dimen/butt_up_padding"
+	    	    android:paddingBottom="@dimen/butt_down_padding" >
+                <ImageButton
+	    		    android:id="@+id/btn_contribute"
+		    	    android:layout_width="wrap_content"
+    			   	android:layout_height="wrap_content"
+    			    android:layout_alignParentTop="true"
+    			    android:layout_centerHorizontal="true"
+    		    	android:background="@drawable/next_button" />
+                <TextView
+    			    android:id="@+id/contribute_btn_text"
+    			    android:layout_width="wrap_content"
+    			    android:layout_height="wrap_content"
+	    		    android:layout_centerHorizontal="true"
+    		    	android:layout_centerVertical="true"    		   		
+    			    android:text="@string/contribute_button_lbl" 
+    			    android:textSize="@dimen/text_size_lbl" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

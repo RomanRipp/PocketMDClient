@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="butt_up_padding">10dp</dimen>
+    <dimen name="butt_down_padding">10dp</dimen>
+    <dimen name="layout_up_padding">10dp</dimen>
+    <dimen name="layout_down_padding">10dp</dimen>
+    <dimen name="layout_left_padding">5dp</dimen>
+    <dimen name="layout_right_padding">5dp</dimen>    
+    <dimen name="text_size_lbl">16dp</dimen>
+    <dimen name="text_size_capt">20dp</dimen>
+    <dimen name="lbl_short_width">50dp</dimen>
+</resources>
