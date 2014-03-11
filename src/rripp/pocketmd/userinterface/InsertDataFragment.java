@@ -34,6 +34,43 @@ public class InsertDataFragment extends Fragment {
             Bundle savedInstanceState) {
     	rootView = inflater.inflate(R.layout.fragment_input_data, container, false);
     	
+    	//Calculates index shock if pulse and sad is entered
+    	final View indShEditText = rootView.findViewById(R.id.IndSh1_Text);
+    	indShEditText.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				EditText indSh = (EditText)v;
+				EditText sad = (EditText) rootView.findViewById(R.id.SAD1_Text);
+				String sadText = sad.getText().toString();
+				EditText pulse = (EditText) rootView.findViewById(R.id.PULSE1_Text);
+				String pulseText = pulse.toString();
+				if (sadText.trim().length() + pulseText.trim().length() > 0){
+					Double indShText = Double.parseDouble(sadText) / Double.parseDouble(sadText);
+					indSh.setText(indShText.toString());
+				}
+			}
+		});
+
+    	
+    	// If MVP is selected the respiratory rate should be inactive
+    	final View mvpCheckBox = rootView.findViewById(R.id.mvpCheckBox);
+    	mvpCheckBox.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				CheckBox checkBox = (CheckBox)v;
+				EditText respEditText = (EditText) rootView.findViewById(R.id.RESP1_Text);
+				// make respiratory text edit inactive if mvp is clicked
+				if (checkBox.isChecked()){
+					respEditText.setVisibility(View.GONE);
+				}else{
+					respEditText.setVisibility(View.VISIBLE);
+				}
+			}
+		});
+
+    	
     	// Glasgow scale can be calculated using dialogues. 
     	View glasgoTextEdit = rootView.findViewById(R.id.GLASGO1_Text);
     	glasgoTextEdit.setOnClickListener(new View.OnClickListener() {
@@ -51,38 +88,26 @@ public class InsertDataFragment extends Fragment {
     	nextButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                    	//Read the patient parameters
-                    	Map<Integer, Double> instance = readInputs();
-                    	
-                    	if (instance.size()==1){
-                    		
-                    		DialogFragment dialog = new NoInputsProvided();
-                    		dialog.show(getActivity().getSupportFragmentManager(), "NoInputsBebe");
-                    		//If user decided to see the demo populate input fields
-                    		
-                    	} else {
-                    		//Run the classification: 
-                    		MainActivity.getPredictor().doTheMachineLearningMagic(instance);
-                    		//Set the values
-                    		ResultDisplayFragment.setPredictedValues();
-                    		//Hide the keyboard
-                    		final InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-                    		imm.hideSoftInputFromWindow(getView().getWindowToken(), 0);
-                    		//go to the results fragment: 
-                    		MainActivity.getViewPager().setCurrentItem(1);
-                    		//Give the values for contribution: (may be not a good idea)
-                    		//DataTransmition.setInstance(instance);
-                    	}
+                    	compute();
                     }
                 });
         return rootView;
     }
+    
+    @Override
+    public void onPause() {
+    	System.out.println("Pause");
+    	super.onPause();
+    }
+    
     @SuppressLint("UseSparseArrays")
 	public static Map<Integer, Double> readInputs(){
 
     	Map<Integer, Double> instance = new HashMap<Integer, Double>();
+    	//Reading input values from input activity
     	for (int key : Deserialization.getParamIndexes()){
     		String paramNames = Deserialization.getParamNames()[key];
+    		//mvp is a check box so we skip through
     		if (paramNames != "MVP1"){
     			EditText editText = (EditText) rootView.findViewWithTag(paramNames);
     			String val = editText.getText().toString();
@@ -90,7 +115,7 @@ public class InsertDataFragment extends Fragment {
     				Double value = Double.parseDouble(val);
     				//All values has their limits
     				double maximum = Deserialization.getParamMax()[key];
-    				double minimum = Deserialization.getParamMax()[key];
+    				double minimum = Deserialization.getParamMin()[key];
     				if (value > maximum || value < minimum){
     					value = limitValue(value, minimum, maximum);
     					//Set proper limited value back to text edit
@@ -158,6 +183,31 @@ public class InsertDataFragment extends Fragment {
     	t.setText("14.0");
     	t = (EditText) rootView.findViewWithTag("AGE");
     	t.setText("20.0");
+    }
+    
+    public void compute(){
+    	//Read the patient parameters
+    	Map<Integer, Double> instance = readInputs();
+    	
+    	if (instance.size()==1){
+    		
+    		DialogFragment dialog = new NoInputsProvided();
+    		dialog.show(getActivity().getSupportFragmentManager(), "NoInputsBebe");
+    		//If user decided to see the demo populate input fields
+    		
+    	} else {
+    		//Run the classification: 
+    		MainActivity.getPredictor().doTheMachineLearningMagic(instance);
+    		//Set the values
+    		ResultDisplayFragment.setPredictedValues();
+    		//Hide the keyboard
+    		final InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+    		imm.hideSoftInputFromWindow(getView().getWindowToken(), 0);
+    		//go to the results fragment: 
+    		MainActivity.getViewPager().setCurrentItem(1);
+    		//Give the values for contribution: (may be not a good idea)
+    		//DataTransmition.setInstance(instance);
+    	}
     }
 }
 

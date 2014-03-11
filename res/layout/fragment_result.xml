@@ -21,18 +21,18 @@
    	    android:layout_height="fill_parent"
    	    android:layout_below="@+id/Caption" >
 
-    <HorizontalScrollView
+    <!-- HorizontalScrollView
         android:id="@+id/horizontalScrollView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|top" >
+        android:layout_gravity="center|top" --> 
 
 	<!-- The bar chart: -->        
 
     <LinearLayout
         android:id="@+id/linearLayout1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:orientation="vertical"
         android:paddingTop="@dimen/layout_up_padding" >
@@ -44,14 +44,14 @@
     	android:padding="5dp">
 
 		<TextView
-		    android:id="@+id/p2"
+		    android:id="@+id/OSL1_p2"
 		    android:layout_width="@dimen/lbl_short_width"
 		    android:layout_height="wrap_content"
 		    android:gravity="center"
 		    android:text="@string/osl1_lbl_short" />
   
     	<TextView
-        	android:id="@+id/bar"
+        	android:id="@+id/OSL1_bar"
         	android:layout_width="5dp"
         	android:layout_height="25dp"
         	android:background="#FF000000" />
@@ -60,13 +60,13 @@
     	android:layout_height="fill_parent"
 	    android:paddingTop="1dp">
     	<TextView
-        	android:id="@+id/p1"
+        	android:id="@+id/OSL1_p1"
         	android:tag="scaleSize"
         	android:layout_width="220dp"
         	android:layout_height="wrap_content"
         	android:background="#FF00FFFF" />
     	<TextView
-        	android:id="@+id/p3"
+        	android:id="@+id/OSL1_chart"
         	android:tag="OSL1_bar"
         	android:layout_width="140dp"
         	android:layout_height="wrap_content"
@@ -83,14 +83,14 @@
     	android:padding="5dp">
 
 		<TextView
-		    android:id="@+id/p2"
+		    android:id="@+id/OSL3_p2"
 		    android:gravity="center"
 		    android:layout_width="@dimen/lbl_short_width"
 		    android:layout_height="wrap_content"
 		    android:text="@string/osl3_lbl_short" />
   
     	<TextView
-        	android:id="@+id/bar"
+        	android:id="@+id/OSL3_bar"
         	android:layout_width="5dp"
         	android:layout_height="25dp"
         	android:background="#FF000000" />
@@ -99,12 +99,12 @@
     	android:layout_height="fill_parent"
 	    android:paddingTop="1dp">
     	<TextView
-        	android:id="@+id/p1"
+        	android:id="@+id/OSL3_p1"
         	android:layout_width="220dp"
         	android:layout_height="wrap_content"
         	android:background="#FF00FFFF" />
     	<TextView
-        	android:id="@+id/p3"
+        	android:id="@+id/OSL3_chart"
         	android:tag="OSL3_bar"
         	android:layout_width="140dp"
         	android:layout_height="wrap_content"
@@ -121,14 +121,14 @@
     	android:padding="5dp">
 
 		<TextView
-		    android:id="@+id/p2"
+		    android:id="@+id/OSL5_p1"
 		    android:gravity="center"
 		    android:layout_width="@dimen/lbl_short_width"
 		    android:layout_height="wrap_content"
 		    android:text="@string/osl5_lbl_short" />
   
     	<TextView
-        	android:id="@+id/bar"
+        	android:id="@+id/OSL5_bar"
         	android:layout_width="5dp"
         	android:layout_height="25dp"
         	android:background="#FF000000" />
@@ -137,12 +137,12 @@
     	android:layout_height="fill_parent"
 	    android:paddingTop="1dp">
     	<TextView
-        	android:id="@+id/p1"
+        	android:id="@+id/OSL5_p3"
         	android:layout_width="220dp"
         	android:layout_height="wrap_content"
         	android:background="#FF00FFFF" />
     	<TextView
-        	android:id="@+id/p3"
+        	android:id="@+id/OSL5_chart"
         	android:tag="OSL5_bar"
         	android:layout_width="140dp"
         	android:layout_height="wrap_content"
@@ -159,14 +159,14 @@
     	android:padding="5dp">
 
 		<TextView
-		    android:id="@+id/p2"
+		    android:id="@+id/OSL7_p1"
 		    android:gravity="center"
 		    android:layout_width="@dimen/lbl_short_width"
 		    android:layout_height="wrap_content"
 		    android:text="@string/osl7_lbl_short" />
   
     	<TextView
-        	android:id="@+id/bar"
+        	android:id="@+id/OSL7_bar"
         	android:layout_width="5dp"
         	android:layout_height="25dp"
         	android:background="#FF000000" />
@@ -175,12 +175,12 @@
     	android:layout_height="fill_parent"
 	    android:paddingTop="1dp">
     	<TextView
-        	android:id="@+id/p1"
+        	android:id="@+id/OSL7_p2"
         	android:layout_width="220dp"
         	android:layout_height="wrap_content"
         	android:background="#FF00FFFF" />
     	<TextView
-        	android:id="@+id/p3"
+        	android:id="@+id/OSL7_chart"
         	android:tag="OSL7_bar"
         	android:layout_width="140dp"
         	android:layout_height="wrap_content"
@@ -197,14 +197,14 @@
     	android:padding="5dp">
 
 		<TextView
-		    android:id="@+id/p2"
+		    android:id="@+id/OSL9_p1"
 		    android:gravity="center"
 		    android:layout_width="@dimen/lbl_short_width"
 		    android:layout_height="wrap_content"
 		    android:text="@string/osl9_lbl_short" />
   
     	<TextView
-        	android:id="@+id/bar"
+        	android:id="@+id/OSL9_bar"
         	android:layout_width="5dp"
         	android:layout_height="25dp"
         	android:background="#FF000000" />
@@ -213,12 +213,12 @@
     	android:layout_height="fill_parent"
 	    android:paddingTop="1dp">
     	<TextView
-        	android:id="@+id/p1"
+        	android:id="@+id/OSL9_p2"
         	android:layout_width="220dp"
         	android:layout_height="wrap_content"
         	android:background="#FF00FFFF" />
     	<TextView
-        	android:id="@+id/p3"
+        	android:id="@+id/OSL9_p3"
         	android:tag="OSL9_bar"
         	android:layout_width="140dp"
         	android:layout_height="wrap_content"
@@ -235,14 +235,14 @@
     	android:padding="5dp">
 
 		<TextView
-		    android:id="@+id/p2"
+		    android:id="@+id/OSL10_p1"
 		    android:gravity="center"
 		    android:layout_width="@dimen/lbl_short_width"
 		    android:layout_height="wrap_content"
 		    android:text="@string/osl10_lbl_short" />
   
     	<TextView
-        	android:id="@+id/bar"
+        	android:id="@+id/OSL10_bar"
         	android:layout_width="5dp"
         	android:layout_height="25dp"
         	android:background="#FF000000" />
@@ -251,12 +251,12 @@
     	android:layout_height="fill_parent"
 	    android:paddingTop="1dp">
     	<TextView
-        	android:id="@+id/p1"
+        	android:id="@+id/OSL10_p2"
         	android:layout_width="220dp"
         	android:layout_height="wrap_content"
         	android:background="#FF00FFFF" />
     	<TextView
-        	android:id="@+id/p3"
+        	android:id="@+id/OSL10_p3"
         	android:tag="OSL10_bar"
         	android:layout_width="140dp"
         	android:layout_height="wrap_content"
@@ -273,14 +273,14 @@
     	android:padding="5dp">
 
 		<TextView
-		    android:id="@+id/p2"
+		    android:id="@+id/ISH_p1"
 		    android:gravity="center"
 		    android:layout_width="@dimen/lbl_short_width"
 		    android:layout_height="wrap_content"
 		    android:text="@string/ish_lbl_short" />
   
     	<TextView
-        	android:id="@+id/bar"
+        	android:id="@+id/ISH_bar"
         	android:layout_width="5dp"
         	android:layout_height="25dp"
         	android:background="#FF000000" />
@@ -289,12 +289,12 @@
     	android:layout_height="fill_parent"
 	    android:paddingTop="1dp">
     	<TextView
-        	android:id="@+id/p1"
+        	android:id="@+id/ISH_p2"
         	android:layout_width="220dp"
         	android:layout_height="wrap_content"
         	android:background="#FF00FFFF" />
     	<TextView
-        	android:id="@+id/p3"
+        	android:id="@+id/ISH_p3"
         	android:tag="ISH_bar"
         	android:layout_width="140dp"
         	android:layout_height="wrap_content"
@@ -573,6 +573,6 @@
             </TableRow>
         </TableLayout>
     </LinearLayout>
-    </HorizontalScrollView>
+    <!--  </HorizontalScrollView> -->
 	</ScrollView>
 </RelativeLayout>

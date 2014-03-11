@@ -28,7 +28,7 @@
     <string name="age_lbl">Age (years)</string>
     
     <!-- FRAGMENT STRINGS: CALCULATED RESULT DATA -->
-    <string name="calc_result_capt">Predicted parameters: </string>
+    <string name="calc_result_capt">Likelihoods: </string>
     <string name="table_hat_par_lbl">Parameter</string>
     <string name="contribute_capt">Treatment result</string>
     <string name="table_hat_val_lbl">Value</string>
@@ -41,7 +41,7 @@
     <string name="osl7_lbl">Acute Renal Failure</string>
     <string name="osl9_lbl">Acute Inflammatory Airways Disease</string>
     <string name="osl10_lbl">Acute Intestinal Injury</string>
-	<string name="ish_lbl">Death</string>
+	<string name="ish_lbl">Lethality</string>
 	
     <string name="osl1_lbl_short">DIC</string>
     <string name="osl3_lbl_short">Sepsis</string>
@@ -85,8 +85,8 @@
 	<string-array name="glasgow_verbal_reaction">
 	    <item name="gcs_verb_blank">Verbal response:</item>
 	    <item name="gcs_no_verb">None</item>
-	    <item name="gcs_incompreh_verb">Incomprehencible</item>
-	    <item name="gcs_inapropr_verb">Inapropriate words</item>
+	    <item name="gcs_incompreh_verb">Incomprehensible</item>
+	    <item name="gcs_inapropr_verb">Inappropriate words</item>
 	    <item name="gcs_diorient_verb">Disoriented conversation</item>
 	    <item name="gcs_orient_verb">Oriented converses</item>
 	    <item name="gcs_intub_verb">Intubated</item>

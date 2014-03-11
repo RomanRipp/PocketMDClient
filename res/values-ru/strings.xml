@@ -3,6 +3,8 @@
     <string name="app_name">PocketMD</string>
     <string name="no_inputs_provided_dialog">Вы не ввели параметры пациента, но это ничего, хотите мы сделаем это за вас и покажем демо?</string>
     <string name="no_instance_to_send_dialog">Показатели пациента отсутствуют введите их и попробуйте еще раз</string>
+    <string name="use_calculator_dialog">Открыть калькулятор шкалы комы Глазго?</string>
+    <string name="glasgo_calculator_dialog">Калькулятор шкалы комы Глазго</string>
 
     <!-- NAVIGATION -->
     <string name="contribute_fragment_name">Сохранить</string>
@@ -19,7 +21,7 @@
     <string name="indSh1_lbl">Индекс шока</string>
     <string name="shockTime_lbl">Длительность кретической гипотонии (ч)</string>
     <string name="temp1_lbl">Температура тела (ºC)</string>
-    <string name="mvp1_lbl">Искуственная вентиляция легких</string>
+    <string name="mvp1_lbl">Искусственная вентиляция легких</string>
     <string name="resp1_lbl">Частота дыхания (ЧД/мин)</string>
     <string name="gluc1_lbl">Глюкоза крови (ммоль/л)</string>
     <string name="glasgo1_lbl">Шкала Глазго (балл)</string>
@@ -60,4 +62,35 @@
 	<string name="ok_btn">OK</string>
 	<string name="cancel_btn">Отмена</string>
 	<string name="contribute_button_lbl">Отпр.</string>
+	
+		<!-- DIALOG STRINGS: GLASGOW CALCULATOR -->
+	<string name="gcs_eye_lbl">Открывание глаз</string>
+	<string name="gcs_motor_lbl">Двигательный ответ</string>
+	<string name="gcs_verbal_lbl">Вербальный ответ</string>
+	<string-array name="glasgow_eye_reaction">
+	    <item name="gcs_eye_blank">Открывание глаз:</item>
+	    <item name="gcs_no_eye">Отсутствует</item>
+	    <item name="gcs_pain_eye">На боль</item>
+	    <item name="gcs_verbal_eye">На речь</item>
+	    <item name="gcs_spont_eye">Спонтанное</item>
+	</string-array>
+	<string-array name="glasgow_motor_reaction">
+	    <item name="gcs_mot_blank">Двигательный ответ:</item>
+	    <item name="gcs_no_mot">Отсутствует</item>
+	    <item name="gcs_decer_mot">Децерберация</item>
+	    <item name="gcs_decor_mot">Декортикация</item>
+	    <item name="gcs_flex_mot">Отдергивание</item>
+	    <item name="gcs_pain_mot">Локализация раздражения</item>
+	    <item name="gcs_verb_mot">Выполнение</item>
+	</string-array>
+	<string-array name="glasgow_verbal_reaction">
+	    <item name="gcs_verb_blank">Вербальный ответ:</item>
+	    <item name="gcs_no_verb">Отсутствует</item>
+	    <item name="gcs_incompreh_verb">Нечленораздельные звуки</item>
+	    <item name="gcs_inapropr_verb">Непонятные слова</item>
+	    <item name="gcs_diorient_verb">Спутанная речь</item>
+	    <item name="gcs_orient_verb">Орейнтированность полная</item>
+	    <item name="gcs_intub_verb">Интубирован</item>
+	</string-array>
+	
 </resources>

@@ -1,7 +1,7 @@
 package rripp.pocketmd.userinterface.pageradapter;
 
 import rripp.pocketmd.R;
-import rripp.pocketmd.userinterface.ContributeDataFragment;
+//import rripp.pocketmd.userinterface.ContributeDataFragment;
 import rripp.pocketmd.userinterface.InsertDataFragment;
 import rripp.pocketmd.userinterface.ResultDisplayFragment;
 import android.content.Context;
@@ -24,9 +24,9 @@ public class AppSectionsPagerAdapter extends FragmentPagerAdapter {
             case 1:
             	//evoking result fragment
             	return new ResultDisplayFragment();
-            case 2:
+//            case 2:
             	//evoking result fragment
-            	return new ContributeDataFragment();
+//            	return new ContributeDataFragment();
 
             default:
             	return null;
@@ -35,14 +35,15 @@ public class AppSectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+//        return 3;
+        return 2;
     }
     
     public CharSequence getPageTitle(int position, Context context) {
     	switch (position){
     		case 0: return context.getText(R.string.input_fragment_name);
     		case 1: return context.getText(R.string.result_fragment_name);
-    		case 2: return context.getText(R.string.contribute_fragment_name);
+//    		case 2: return context.getText(R.string.contribute_fragment_name);
     		default: return null;
     	}
     }

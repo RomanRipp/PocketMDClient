@@ -51,7 +51,7 @@
 			    android:layout_height="wrap_content"
 			    android:ems="10"
 			    android:hint="@string/dad1_lbl"
-			    android:inputType="numberDecimal"
+			    android:inputType="number"
 			    android:tag="DAD1"
 			    android:textSize="@dimen/text_size_lbl" />
 
@@ -61,7 +61,7 @@
 			    android:layout_height="wrap_content"
 			    android:ems="10"
 			    android:hint="@string/sad1_lbl"
-			    android:inputType="numberDecimal"
+			    android:inputType="number"
 			    android:tag="SAD1"
 			    android:textSize="@dimen/text_size_lbl" />
 			
@@ -112,7 +112,7 @@
 			    android:layout_height="wrap_content"
 			    android:ems="10"
 			    android:hint="@string/resp1_lbl"
-			    android:inputType="numberDecimal"
+			    android:inputType="number"
 			    android:tag="RESP1"
 			    android:textSize="@dimen/text_size_lbl" />
 
@@ -148,7 +148,7 @@
 			    android:textSize="@dimen/text_size_lbl" />
 
 			<CheckBox
-			    android:id="@+id/checkBox1"
+			    android:id="@+id/mvpCheckBox"
 			    android:tag ="MVP1"
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"

@@ -28,6 +28,17 @@ public class ResultDisplayFragment extends Fragment {
         return rootView;
     }
     
+    @Override
+    public void onStart() {
+    	System.out.println("Start");
+    	super.onStart();
+    }
+    
+    @Override
+    public void onResume() {
+    	System.out.println("Resume");
+    	super.onResume();
+    }
     public static void setPredictedValues(){
     	//Here we draw pretty bar chart
     	//First we start from getting the classes and probabilities: 
